@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Config from "react-native-config";
 
-const rapidApiKey = "73379ba041msh08899f8eabd6a7fp1fe1e7jsn82f028673f45";
+const rapidApiKey = Config.(RAPID_API_KEY);
 
 const useFetch = (endpoint, query) => {
   const [data, setData] = useState([]);
